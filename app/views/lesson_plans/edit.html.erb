@@ -2,7 +2,7 @@
 
 <%= form_for @plan do |f| %>  
   <%= f.fields_for :lesson_mappings do |builder| %>
-    <%= render 'lesson_mapping_fields', f: builder, p: @plan %>
+    <%= render 'lesson_mapping_fields', f: builder %>
   <% end %>
   <%= link_to_add_fields "Add Lessons", f, :lesson_mappings %><br />
   <%= f.submit 'Submit' %>
