@@ -1,0 +1,9 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: so_example
+  pool: 5
+  username: DB_USER
+  password: DB_PASS
+  socket: /tmp/mysql.sock

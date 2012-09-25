@@ -1,0 +1,7 @@
+<h1>Lesson Plans</h1>
+
+<ul>
+  <% @plans.each do |p| %>
+    <li><%= link_to p.name, edit_lesson_plan_path(p) %></li>
+  <% end %>
+</ul>
